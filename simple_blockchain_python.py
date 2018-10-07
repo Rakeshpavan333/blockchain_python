@@ -26,11 +26,9 @@ block0_hash = block0.hash
 
 blockchain = [block0]
 print blockchain[0].hash
-7def07fe97522e4184f4bd3c337c25364871c5f8446aa8e42ab703585abca266
 block1 = Block(1, 0, block0_hash, tx)
 blockchain.append(block1)
 print blockchain[1].hash
-4b1584febd1580082c3af06eae7f18f41735347fb670d458e35251c4780b16fc
 class Blockchain(object):
     
     def __init__(self):
@@ -94,9 +92,3 @@ for i in range(1, 5):
     
 print "blockchain height: ", blockchain.get_blockchain_height()   
 block.index block.nonce block.hash
-0 0 58fde456bbd951c28533d34dc97d8dd78d48bd69e9129ef4107fb005843e2103
-1 196 00cf29a4406802e92b72ff67b4a7d8bba5f04657c414e15d2a4e85aafd3da41b
-2 31 00b4ac450f5cefd5a91491574237d80d32eddb8359ef349a5560f21d9b807201
-3 85 0093b1c3bff3f5ea52881ad3cc2611c3b2879db0b13b34813cf001696822a3ce
-4 576 00eb53a2bcbf0312b251b7f7ee7e409cf8342dadad1665723313463427006133
-blockchain height:  5
